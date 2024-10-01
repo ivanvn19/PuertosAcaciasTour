@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PUERTOS - BARRIP ACACIAS VR</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-frente">
+        <li class="text">FRENTE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-frente-ii">
+        <li class="text">FRENTE II</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-garage">
+        <li class="text">GARAGE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-ingreso">
+        <li class="text">INGRESO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-jardin-exterior">
+        <li class="text">JARDIN EXTERIOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-ingreso-lateral-">
+        <li class="text">INGRESO LATERAL </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-ingreso-lateral-ii">
+        <li class="text">INGRESO LATERAL II</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-parque-ii">
+        <li class="text">PARQUE II</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-parque-">
+        <li class="text">PARQUE </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-galeria-">
+        <li class="text">GALERIA </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-galeria-ii">
+        <li class="text">GALERIA II</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-ingreso-a-toilet">
+        <li class="text">INGRESO A TOILET</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-living---comedor-">
+        <li class="text">LIVING - COMEDOR </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-cocina">
+        <li class="text">COCINA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-ingreso-lavadero---cuarto-s">
+        <li class="text">INGRESO LAVADERO - CUARTO S</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-lavadero">
+        <li class="text">LAVADERO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-cuarto-de-servicio">
+        <li class="text">CUARTO DE SERVICIO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-bao-cs">
+        <li class="text">BAÑO C.S</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-distribucion-pa">
+        <li class="text">DISTRIBUCION PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-habitacion-principal">
+        <li class="text">HABITACION PRINCIPAL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-vestidor">
+        <li class="text">VESTIDOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-bao-en-suit">
+        <li class="text">BAÑO EN SUIT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-ingreso-habitaciones-pa">
+        <li class="text">INGRESO HABITACIONES PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-habitacion-i-pa">
+        <li class="text">HABITACION I PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-bao-pa">
+        <li class="text">BAÑO PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-habitacion-ii-pa">
+        <li class="text">HABITACION II PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-descanso-escalera-">
+        <li class="text">DESCANSO ESCALERA </li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
